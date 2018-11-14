@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Book inventory Management</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-5">Add Book</h1>
+    <form id="add-book">
+        <div class="form-group">
+            <label for="book-title"><h5>Book Title</h5></label>
+            <input type="text" class="form-control" id="book-title">
+        </div>
+        <div class="form-group">
+            <label for="author"><h5>Author</h5></label>
+            <input type="text" class="form-control" id="author">
+        </div>
+        <div class="form-group">
+            <label for="isbn"><h5>ISBN</h5></label>
+            <input type="text" class="form-control" id="isbn">
+        </div>
+        <div class="form-group">
+            <button class="btn btn-success btn-lg" id="add-btn">Add Book</button>
+        </div>
+    </form>
+
+    <!-- Book display table -->
+    <table class="table table-striped">
+        <thead class="thead-dark">
+            <th>Title</th>
+            <th>Author</th>
+            <th>ISBN</th>
+            <th></th>
+        </thead>
+        <tbody id="tbody">
+
+        </tbody>
+    </table>
+    </div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.5/esm/popper.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script src="app-es6.js"></script>
+</body>
+</html>
